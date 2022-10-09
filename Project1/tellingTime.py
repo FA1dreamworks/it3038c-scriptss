@@ -11,7 +11,8 @@ elif(answer == 'no' or answer == 'No'):
     exit()
 elif(answer != 'yes' or 'no'):
     print("That is not a correct response, please try again.")
-
+    exit()
+    
 print("Do you want to know today's date? ")
 answer = input();
 if answer == 'yes' or answer == 'Yes':
@@ -21,6 +22,7 @@ elif(answer == 'no' or answer == 'No'):
     exit()
 elif(answer != 'yes' or 'no'):
     print("That is not a correct response, please try again.")
+    exit()
 
 print("For the full time and date please press F.")
 full= input();
