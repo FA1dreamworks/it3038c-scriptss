@@ -1,0 +1,11 @@
+from bs4 import BeautifulSoup
+import requests, re
+
+data = requests.get('http://researchdirectory.uc.edu/p/driscoen').content
+soup = BeautifulSoup(data, 'html.parser')
+scan = soup.find("div",{"class": "location col-md-4 col-sm-5 col-md-offset-2 col-sm-offset-1"})
+contact = scan.text
+
+print("Eden's location is " + contact)
+
+
