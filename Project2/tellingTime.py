@@ -1,15 +1,13 @@
-from datetime import date, datetime;
-from zoneinfo import timezone;
+from datetime import date;
 import time;
-import zoneinfo;
 today= date.today();
-GMT= zoneinfo.timezone('Asia/Tokyo')
 
+print("Input the length of the countdown in seconds: ")
+t = input();
 print("Do you want to know the time? ")
 answer = input();
 if answer == 'yes' or answer == 'Yes':
     print("The time is: " + time.strftime("%I:%M:%S %p"))
-    print("The PST time is: " + GMT)
 
 elif(answer == 'no' or answer == 'No'):
     print("Thank you for using the telling time service!")
